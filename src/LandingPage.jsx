@@ -11,21 +11,21 @@ return (
     <div className="landingPage">
 <div className="card">
      <img src={logoImage} alt="Logo" className="logo" />
-            <h1>Please select how you wish to pay for your ticket</h1>
+            <h1>Green finance loan Credit union finder</h1>
     <div className="optionsContainer">
         
         <div className="methodContainer">
             <Link to="/payroll" className="nav-button">
             Payroll
             </Link>
-            <p className="payroll-explanation">If your employer already works with a SoundPound credit union, you may be able to pay for any Annual Bee Network Tickets directly from your paycheck. Search for your employer and see if this works for you.</p>
+            <p className="payroll-explanation">If your employer already works with a SoundPound credit union that provides green finance loans select them from the list below to check. </p>
         </div>
         <div className="methodContainer">
             <Link to="postcode" className="nav-button">
             Direct
             </Link>
 
-        <p className="direct-explanation">Everyone can pay for their Annual Bee Network Tickets directly through a local credit union. Simply search the postcode where you live or work and find your credit union today.</p>
+        <p className="direct-explanation">Search based on either your own, or your employment postcode and see if any eligible credit unions cover the area.</p>
         </div>
     </div>
 </div>

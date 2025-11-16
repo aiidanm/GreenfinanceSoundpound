@@ -11,6 +11,7 @@ import SouthManchesterLogo from "./assets/logos/SouthManchesterLogo.png";
 import StockportLogo from "./assets/logos/StockportLogo.png";
 import UnifyLogo from "./assets/logos/UnifyLogo.png";
 import MetroMoneywiseLogo from "./assets/logos/MetroMoneywise.png";
+import CopperpotLogo from "./assets/logos/Copperpot.png";
 import Select from "react-select";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 function PayrollSearch() {
@@ -107,6 +108,11 @@ function PayrollSearch() {
       img_url: MetroMoneywiseLogo,
       ApplyLink: "https://www.metromoneywise.co.uk/loans/annual-bee-bus-ticket",
     },
+    "No1 Copperpot": {
+      name: "No1 Copperpot Credit Union",
+      img_url: CopperpotLogo,
+      ApplyLink: "https://www.no1copperpot.com/police-loans/green-loan/",
+    },
   };
 
   useEffect(() => {
@@ -127,7 +133,7 @@ function PayrollSearch() {
           <div className="payroll-results">
             <h2>
               Your employer, {selectedEmployer.name} is partnered with the below
-              Credit Unions
+              Credit Unions that provide green finance
             </h2>
             {result.creditUnions.map((creditunion) => {
               return (
@@ -179,9 +185,7 @@ function PayrollSearch() {
           </>
         )}
         <h3>
-          There may be more than one credit union you can access the Annual Bee
-          Bus Tickets through. All products and processes are the same – just
-          pick whichever suits you best.{" "}
+          There may be more than one credit union you can access green finance through.{" "}
         </h3>
         <Link to="/" className="nav-button">
           Start again

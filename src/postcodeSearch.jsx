@@ -107,7 +107,7 @@ function Postcode() {
                 <h1 className="error-title">
                   Unforutnatley your postcode {"("}
                   {enteredPostcode.toUpperCase()}
-                  {")"} is outside of our eligible area.
+                  {")"} does not match with any credit unions currently offering Green finance loans.
                 </h1>
                 <h2 className="error-explanation">
                   If you would still like to join a credit union to access its
@@ -115,7 +115,7 @@ function Postcode() {
                 </h2>
                 <button className="apply-button">
                   <a
-                    href="https://www.findyourcreditunion.co.uk"
+                    href={`https://www.findyourcreditunion.co.uk/search?Location=${parse(enteredPostcode).district}+${parse(enteredPostcode).incode}&EmploymentLocation=&EmploymentName=&Associations=`}
                     target="_blank"
                   >
                     Find your credit union
@@ -184,9 +184,7 @@ function Postcode() {
 
         <h3>
           Please note that based on location there may be more than one credit
-          union you are eligible to join. You can only access the Adult Annual
-          Bee Bus Ticket Loan through one credit union, but may have a choice
-          over which credit union you use.{" "}
+          union you are eligible to apply for green finance from.{" "}
         </h3>
         <Link to="/" className="nav-button">
           Start again
