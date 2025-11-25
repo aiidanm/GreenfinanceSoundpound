@@ -55,22 +55,21 @@ function PayrollSearch() {
 
   const creditUnionDataTable = {
     Manchester: {
-      name: "Manchester Credit Union",
-      img_url: ManchesterLogo,
-      ApplyLink:
-        "https://manchestercreditunion.co.uk/products/loans/bee-network-annual-bus-ticket",
-    },
-    "South Manchester": {
-      name: "South Manchester Credit Union",
-      img_url: SouthManchesterLogo,
-      ApplyLink: "https://www.smcreditunion.co.uk/annual-bee-bus-ticket/",
-    },
-    Salford: {
-      name: "Salford Credit Union",
-      img_url: SalfordLogo,
-      ApplyLink:
-        "https://www.salfordcreditunion.com/annual-bee-bus-ticket-loan/",
-    },
+         name: "Manchester Credit Union",
+         img_url: ManchesterLogo,
+         ApplyLink: "https://manchestercreditunion.co.uk/products/loans",
+       },
+       "South Manchester": {
+         name: "South Manchester Credit Union",
+         img_url: SouthManchesterLogo,
+         ApplyLink: "https://www.smcreditunion.co.uk/green-loan/",
+       },
+       Salford: {
+         name: "Salford Credit Union",
+         img_url: SalfordLogo,
+         ApplyLink:
+           "https://www.salfordcreditunion.com/affordable-loans/green-loans/",
+       },
     "Metro Moneywise": {
       name: "Metro Moneywise Credit Union",
       img_url: MetroMoneywiseLogo,
