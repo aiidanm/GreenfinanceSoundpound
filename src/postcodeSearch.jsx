@@ -1,16 +1,11 @@
 import "./App.css";
 import { useState } from "react";
 import postcodeLookupFile from "./postcode_lookup.json";
-import { parse, match, toNormalised } from "postcode";
+import { parse } from "postcode";
 import logoImage from "./SoundPound.png";
-import CashboxLogo from "./assets/logos/CashboxLogo.png";
-import HootLogo from "./assets/logos/HootLogo.png";
 import ManchesterLogo from "./assets/logos/ManchesterLogo.png";
-import OldhamLogo from "./assets/logos/OldhamLogo.png";
 import SalfordLogo from "./assets/logos/SalfordLogo.png";
 import SouthManchesterLogo from "./assets/logos/SouthManchesterLogo.png";
-import StockportLogo from "./assets/logos/StockportLogo.png";
-import UnifyLogo from "./assets/logos/UnifyLogo.png";
 import { Link } from "react-router";
 
 
@@ -19,7 +14,6 @@ function Postcode() {
   const [result, setResult] = useState("");
   const [searchDone, setSearchDone] = useState(false);
   const [error, setError] = useState(false);
-
   const postcodeLookup = postcodeLookupFile;
 
   const handlePostcodeChange = (e) => {

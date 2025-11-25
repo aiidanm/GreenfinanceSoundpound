@@ -2,25 +2,19 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import logoImage from "./SoundPound.png";
 import employerLookupFile from "./employerLookup.json";
-import CashboxLogo from "./assets/logos/CashboxLogo.png";
-import HootLogo from "./assets/logos/HootLogo.png";
 import ManchesterLogo from "./assets/logos/ManchesterLogo.png";
-import OldhamLogo from "./assets/logos/OldhamLogo.png";
 import SalfordLogo from "./assets/logos/SalfordLogo.png";
 import SouthManchesterLogo from "./assets/logos/SouthManchesterLogo.png";
-import StockportLogo from "./assets/logos/StockportLogo.png";
-import UnifyLogo from "./assets/logos/UnifyLogo.png";
 import MetroMoneywiseLogo from "./assets/logos/MetroMoneywise.png";
 import CopperpotLogo from "./assets/logos/Copperpot.png";
 import Select from "react-select";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 function PayrollSearch() {
   const [payrollPartners, setPayrollPartners] = useState([]);
   const [selectedEmployer, setSelectedEmployer] = useState("");
   const [result, setResult] = useState("");
   const [searchDone, setSearchDone] = useState(false);
   const [iserror, setIsError] = useState(false);
-  const navigate = useNavigate();
 
   const handleEmployerChange = (e) => {
     setSelectedEmployer({ name: e.label, creditUnions: e.value });
